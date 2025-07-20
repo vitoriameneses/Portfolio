@@ -18,9 +18,9 @@ const projetos = [
     titulo: "E-commerce Clothing",
     descricao: "Loja virtual de roupas com sistema de carrinho, wishlist e perfil do usuário.",
     imagens: [
-      "assets/projetos/projeto_ecommerce_clothing/home_page.png",
-      "assets/projetos/projeto_ecommerce_clothing/profilepage.png",
-      "assets/projetos/projeto_ecommerce_clothing/wishlistpage.png"
+      "assets/projects/projeto_ecommerce_clothing/home_page.png",
+      "assets/projects/projeto_ecommerce_clothing/profilepage.png",
+      "assets/projects/projeto_ecommerce_clothing/wishlistpage.png"
     ],
     link: "https://seuecommerce.com"
   },
@@ -28,10 +28,10 @@ const projetos = [
     titulo: "Hera CRM",
     descricao: "Plataforma para gestão de clientes e empresas, com painéis de relatórios.",
     imagens: [
-      "assets/projetos/projeto_hera/hera_company_list.png",
-      "assets/projetos/projeto_hera/hera_login.png",
-      "assets/projetos/projeto_hera/hera_profile_page.png",
-      "assets/projetos/projeto_hera/hera_see_users.png"
+      "assets/projects/projeto_hera/hera_login.png",
+      "assets/projects/projeto_hera/hera_company_list.png",
+      "assets/projects/projeto_hera/hera_see_users.png",
+      "assets/projects/projeto_hera/hera_profile_page.png"
     ],
     link: "https://github.com/seuusuario/hera-crm"
   },
@@ -39,8 +39,8 @@ const projetos = [
     titulo: "IP Address Tracker",
     descricao: "Busca de IP com visualização em mapa responsivo (desktop & mobile).",
     imagens: [
-      "assets/projetos/projeto_ip_address/ip_address_desktop.png",
-      "assets/projetos/projeto_ip_address/ip_address_mobile.png"
+      "assets/projects/projeto_ip_address/ip_address_desktop.png",
+      "assets/projects/projeto_ip_address/ip_address_mobile.png"
     ],
     link: "https://iptracker.vercel.app"
   },
@@ -48,9 +48,9 @@ const projetos = [
     titulo: "SunnySide Landing Page",
     descricao: "Landing page criativa para agência de branding.",
     imagens: [
-      "assets/projetos/projeto_sunnyside_landingpage/sunny1.png",
-      "assets/projetos/projeto_sunnyside_landingpage/sunny2.png",
-      "assets/projetos/projeto_sunnyside_landingpage/sunny3.png"
+      "assets/projects/projeto_sunnyside_landingpage/sunny1.png",
+      "assets/projects/projeto_sunnyside_landingpage/sunny2.png",
+      "assets/projects/projeto_sunnyside_landingpage/sunny3.png"
     ],
     link: "https://sunnyside-landingpage.netlify.app"
   }
