@@ -9,8 +9,8 @@
 </head>
 <body>
   <header class="glass blur-fade">
-    <div class="container nav-container">
-      <h1 class="logo">vitóriadev</h1>
+    <div id="headerid" class="container nav-container">
+      <h1 class="logo">Vitória Teixeira</h1>
       <nav>
         <a href="#sobre">sobre</a>
         <a href="#projetos">projetos</a>
@@ -22,39 +22,158 @@
   <section class="hero fade-in">
     <div class="container hero-content glass">
       <div class="text">
-        <h2>Olá, sou Vitória 👋</h2>
-        <p>Desenvolvedora Front-End apaixonada por UI/UX e tecnologia.</p>
+        <h2 class="title">Olá, sou Vitória 👋</h2>
+        <div class="description">
+          <p>Desenvolvedora Front-End dedicada, com olhar apurado para detalhes e forte foco em criar interfaces intuitivas, funcionais e visualmente atraentes. Tenho facilidade em transformar ideias e conceitos em experiências digitais fluidas e envolventes, sempre priorizando a usabilidade e a qualidade do código. Sou apaixonada por design centrado no usuário e por acompanhar todo o processo de construção de um produto digital, desde o planejamento até a entrega final. Motivada por desafios, estou sempre em busca de aprimorar meus conhecimentos e contribuir para projetos que impactem positivamente a vida das pessoas.</p>
+        </div>
       </div>
-      <img src="assets/hero-img.svg" alt="Ilustração" class="hero-img">
+      <img src="assets/svgs/undraw_web-app_141a.svg" alt="Ilustração" class="hero-img">
     </div>
   </section>
 
   <section id="sobre" class="sobre fade-in">
     <div class="container glass">
-      <h2>sobre mim</h2>
-      <p>Tenho experiência com HTML, CSS, JavaScript e React. Desenvolvo interfaces modernas com foco em acessibilidade e performance.</p>
+      <h2>Tecnologias</h2>
+      <p class="section-subtext">Estas são as ferramentas e linguagens que domino e utilizo no desenvolvimento de interfaces modernas e funcionais:</p>
+      <div class="tech-grid">
+        <!-- Exemplo de card -->
+        <div class="tech-card">
+          <img src="assets/svgs/icons8-html-5.svg" alt="HTML" />
+          <span>HTML</span>
+        </div>
+
+        <div class="tech-card">
+          <img src="assets/svgs/icons8-css3.svg" alt="CSS" />
+          <span>CSS</span>
+        </div>
+
+        <div class="tech-card">
+          <img src="assets/svgs/icons8-javascript-logo.svg" alt="JavaScript" />
+          <span>JavaScript</span>
+        </div>
+
+        <div class="tech-card">
+          <img src="assets/svgs/icons8-angularjs.svg" alt="Angular" />
+          <span>Angular</span>
+        </div>
+
+        <div class="tech-card">
+          <img src="assets/svgs/icons8-react-native.svg" alt="ReactJS" />
+          <span>ReactJS/Native</span>
+        </div>
+
+        <div class="tech-card">
+          <img src="assets/svgs/icons8-c++.svg" alt="C/C++" />
+          <span>C / C++</span>
+        </div>
+
+        <div class="tech-card">
+          <img src="assets/svgs/icons8-java.svg" alt="Java" />
+          <span>Java</span>
+        </div>
+
+        <div class="tech-card">
+          <img src="assets/svgs/icons8-python.svg" alt="Python" />
+          <span>Python</span>
+        </div>
+
+        <div class="tech-card">
+          <img src="assets/svgs/icons8-flutter-logo.svg" alt="Flutter" />
+          <span>Flutter</span>
+        </div>
+
+        <div class="tech-card">
+          <img src="assets/svgs/icons8-mysql-logo.svg" alt="MySQL" />
+          <span>MySQL</span>
+        </div>
+
+        <div class="tech-card">
+          <img src="assets/svgs/icons8-firebase.svg" alt="Firebase" />
+          <span>Firebase</span>
+        </div>
+
+        <div class="tech-card">
+          <img src="assets/svgs/api.svg" alt="API Rest" />
+          <span>API Rest</span>
+        </div>
+      </div>
     </div>
   </section>
 
+
   <section id="projetos" class="projetos fade-in">
     <div class="container">
-      <h2>projetos</h2>
-      <div class="grid">
+      <h2>Projetos</h2>
+      <p class="section-subtext projetos-p">Confira alguns dos projetos que desenvolvi, aplicando boas práticas de design, desenvolvimento responsivo e foco na experiência do usuário.</p>
+
+      <div id="cards" class="grid"></div> 
+      <!--<div class="grid">
+        <div class="card glass" onclick="abrirModal(0)">
+          <img src="assets/projetos/projeto1-thumb.png" alt="Projeto 1">
+          <h3>Projeto 1</h3>
+          <p>Landing page moderna.</p>
+        </div>
+
+        <div class="card glass" onclick="abrirModal(1)">
+          <img src="assets/projetos/projeto2-thumb.png" alt="Projeto 2">
+          <h3>Projeto 2</h3>
+          <p>Dashboard com gráficos.</p>
+        </div>
+
+      </div>-->
+
+      <!-- Modal de Detalhes -->
+      <div id="modal" class="modal hidden">
+      <div id="modal-content" class="modal-content glass">
+        <span class="close" onclick="fecharModal()">&times;</span>
+
+        <h3 id="modal-title"></h3>
+        <p id="modal-description"></p>
+
+        <div id="modal-images" class="modal-images"></div>
+
+        <!--<a id="modal-link" href="#" target="_blank" class="modal-link">ver projeto</a>
+
+        <button id="next-btn" class="next-btn" onclick="proximoProjeto()">
+          próximo projeto →
+        </button>-->
+      </div>
+    </div>
+      <!--<div id="modal" class="modal hidden">
+        <div class="modal-content glass">
+          <span class="close" onclick="fecharModal()">&times;</span>
+          <h3 id="modal-title">Título</h3>
+          <p id="modal-description">Descrição longa do projeto.</p>
+          <div id="modal-images" class="modal-images"></div>
+          <a id="modal-link" href="#" target="_blank" class="modal-link">Ver projeto</a>
+        </div>
+      </div>-->
+
+      <!--<div class="grid">
         <div class="card glass">
           <img src="assets/projetos/projeto1.png" alt="Projeto 1" />
           <h3>Projeto 1</h3>
           <p>Descrição curta do projeto.</p>
           <a href="#">ver projeto</a>
         </div>
-        <!-- + cards -->
-      </div>
+      </div>-->
     </div>
   </section>
 
   <section id="contato" class="contato fade-in">
     <div class="container glass">
-      <h2>contato</h2>
-      <p>Entre em contato por <a href="mailto:vitoria@email.com">vitoria@email.com</a>.</p>
+      <div class="contact">
+        <div class="contact-info">
+          <h2>Contato</h2>
+          <p class="section-subtext">
+          Se você gostou do meu trabalho e quer conversar sobre oportunidades, colaborações ou só bater um papo sobre tecnologia, estou à disposição!<br/>
+          Envie um e-mail para <a href="mailto:vitoria.menesesmt@gmail.com">vitoria.menesesmt@gmail.com</a>.
+        </div>
+              
+        <div class="contact-img">
+          <img src="assets/svgs/undraw_personal-email_hfut.svg" alt="Ilustração" class="hero-img">
+        </div>
+      </div>
     </div>
   </section>
 
