@@ -460,10 +460,10 @@ footer {
     text-align: center;
   }
 
-  nav {
+  /*nav {
     display: flex;
     flex-direction: column;
-  }
+  }*/
 
   nav a {
     margin: 10px 0;
